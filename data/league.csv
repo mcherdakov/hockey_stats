@@ -1,0 +1,436 @@
+id,league_short_name,league_full_name
+1,KHL,Kontinental Hockey League
+2,SHL,Swedish Hockey League
+3,Liiga,Liiga
+4,NLA,National League
+5,Extraliga,Tipsport Extraliga
+6,Extraliga,Tipsport Liga
+7,DEL,Deutsche Eishockey Liga
+8,ChampHL,Champions Hockey League
+9,NHL,National Hockey League
+10,AHL,American Hockey League
+11,ECHL,ECHL
+12,NCAA,NCAA Division I
+13,SHL,Swedish Hockey League
+14,Allsvenskan,HockeyAllsvenskan
+15,Division 1,HockeyEttan
+16,Division 2,HockeyTvåan
+17,Division 3,HockeyTrean
+18,Division 4,HockeyFyran
+19,Division 5,Division 5 (Sweden)
+20,Division 6,Division 6 (Sweden)
+21,J20 SuperElit,J20 SuperElit
+22,J20 Elit,J20 Elit
+23,J20 Div.1,J20 Division 1
+24,J20 Div.2,J20 Division 2
+25,J18 Allsvenskan,J18 Allsvenskan
+26,J18 Elit,J18 Elit
+27,J18 Div.1,J18 Division 1
+28,J18 Div.2,J18 Division 2
+29,U16 SM,U16 SM
+30,U16 Elit,U16 Elit
+31,U16 Div.1,U16 Division 1
+32,U16 Div.2,U16 Division 2
+33,TV-Pucken,TV-Pucken
+34,Liiga,Liiga
+35,Mestis,Mestis
+36,Suomi-sarja,Suomi-sarja
+37,II-divisioona,II-divisioona
+38,III-divisioona,III-divisioona
+39,Jr. SM-liiga,Nuorten SM-liiga
+40,Jr. A Mestis,Jr. A Mestis
+41,Jr. A Suomi-sarja,Jr. A Suomi-sarja
+42,Jr. B SM-sarja,Jr. B SM-sarja
+43,Jr. B Mestis,Jr. B Mestis
+44,Jr. B Suomi-sarja,Jr. B Suomi-sarja
+45,Jr. C SM-sarja,Jr. C SM-sarja
+46,Metal Ligaen,Metal Ligaen
+47,1. Division,1. Division
+48,Denmark U20,Denmark U20
+49,Denmark U17,Denmark U17
+50,Get Ligaen,Get Ligaen
+51,1. Divisjon,1. divisjon
+52,2. Divisjon,2. divisjon
+53,3. Divisjon,Norway4
+54,Norway U21,Norway U21
+55,Norway U18,Norway U18
+56,Iceland,Icelandic Hockey League
+57,NLA,National League
+58,NLB,Swiss League
+59,SRL,MySports League
+60,1. Liga,1. Amateur Regio League
+61,U20-Elit,U20-Elit
+62,U20-Top,U20-Top
+63,U17-Elit,U17-Elit
+64,DEL,Deutsche Eishockey Liga
+65,DEL 2,DEL 2
+66,Oberliga,Oberliga
+67,Regionalliga,Regionalliga
+68,DNL U20 Div. I,DNL U20
+69,DNL U20 Div. II,DNL U20 2
+70,DNL U20 Div. III,DNL U20 3
+71,Germany U17 Div. I,Germany U17
+72,Germany U17 Div. II,Germany U17 2
+73,Erste Bank Liga,Erste Bank Eishockey Liga
+74,Alps Hockey League,Alps Hockey League
+75,ÖAHL,Österreichische Amateur Hockey Liga (ÖAHL)
+76,EBYSL,Erste Bank Young Stars League
+77,EBJL,Erste Bank Juniors League
+78,Ligue Magnus,Synerglace Ligue Magnus
+79,Division 1,"FFHG, Division 1"
+80,Division 2,"FFHG, Division 2"
+81,Division 3,"FFHG, Division 3"
+82,France U17,"FFHG, U17 Elite"
+83,France U20,"FFHG, U20 Elite"
+84,EIHL,Elite Ice Hockey League
+85,NIHL,National Ice Hockey League
+86,NIHL 1,National Ice Hockey League Division 1
+87,NIHL 2,National Ice Hockey League Division 2
+88,England U15,English U15 Division 1
+89,England U18,English U18 Division 1
+90,England U20,English Under 20s
+91,SNL,Scottish National League
+92,BeNeLiga,BeNe League
+93,Netherlands2,Eerste Divisie
+94,KHL,Kontinental Hockey League
+95,VHL,Vysshaya Hokkeinaya Liga
+96,Russia3,Pervenstvo VHL
+97,MHL,Molodyozhnaya Hokkeinaya Liga
+98,NMHL,Molodyozhnaya Hokkeinaya Liga B
+99,Russia U16,Russia U16
+100,Russia U17,Russia U17
+101,Russia U18,YHL
+102,Extraliga,Tipsport Extraliga
+103,1. liga,1. liga
+104,2. liga,2. liga
+105,Czech U16,ELIOD extraliga dorostu
+106,Czech U20,DHL Juniorská liga akademií
+107,Extraliga,Tipsport Liga
+108,1. liga,Slovenská hokejová liga
+109,Slovakia U16,Slovakia U16
+110,Slovakia U18,Slovakia U18
+111,Slovakia U20,Slovakia U20
+112,Latvia,Optibet hokeja liga
+113,Latvia2,Junioru Attistibas Hokeja liga
+114,Latvia U17,Latvia U17
+115,Erste Liga,Erste Liga
+116,Hungary,Hungary
+117,Hungary U18,Hungary U18
+118,Hungary U20,Hungary U21
+119,Belarus,Belarusian Extraleague A
+120,Belarus2,Belarusian Extraleague B
+121,Belarus3,Belarusian Higher League
+122,Ukraine,Ukrainian Hockey League
+123,Ukraine U19,Ukraine U19
+124,Kazakhstan,Kazakhstan Hockey Championship
+125,Poland,Polska Hokej Liga
+126,Poland2,Polish 1. Liga
+127,Poland U20,Centralna Liga Juniorow
+128,Bulgaria,Bulgaria
+129,Estonia,Estonia
+130,Lithuania,Lithuania
+131,Romania,Romania
+132,Alps Hockey League,Alps Hockey League
+133,IHL Elite,Italian Hockey League Serie A
+134,Italian HL,Italian Hockey League
+135,IHL Division 1,Division I
+136,Junior League,Junior League U19
+137,Italy U17,Italy U17
+138,Croatia,Croatian Ice Hockey League
+139,Serbia,Serbia
+140,Slovenia,Slovenia
+141,IntHL,International Hockey League
+142,IntHL U19,IntHL U19
+143,Bosnia,Bosna i Herzegovina Hockey League
+144,Spain,Spain
+145,Turkey,Türkiye Buz Hokeyi Süper Ligi
+146,Asia League,Asia League Ice Hockey
+147,CIHL HK,CIHL Hong Kong
+148,China,China
+149,Japan,Japan
+150,Korea College,Korea College
+151,AIHL,Australian Ice Hockey League
+152,AIJHL,Australian Junior Hockey League
+153,ECSL,East Coast Super League
+154,IHSA Premier,Ice Hockey South Australia Premier League
+155,IHV Premier,Ice Hockey Victoria Premier League
+156,WASL,Western Australian Super League
+157,NZIHL,New Zealand Ice Hockey League
+158,GPHL,Gauteng Premier Hockey League
+159,WPIHL,Western Province Ice Hockey League
+160,Israel,Israel
+161,UAE,Emirates Hockey League
+162,EUHL,European University Hockey League
+163,MSHL1,Moscow Student Hockey League
+164,MSHL2,Moscow Student Hockey League
+165,MSHL3,Moscow Student Hockey League
+166,RSHL1,Russian Student Hockey League - Master Division
+167,RSHL2,Russian Student Hockey League - Bachelor Division
+168,SHLSPB1,Saint Petersburg Student Hockey League
+169,SHLSPB2,Saint Petersburg Student Hockey League
+170,NHL,National Hockey League
+171,AHL,American Hockey League
+172,ECHL,ECHL
+173,SPHL,Southern Professional Hockey League
+174,LNAH,Ligue Nord-Américaine de Hockey
+175,FPHL,Federal Prospects Hockey League
+176,ACH,Allan Cup Hockey
+177,ACHW,Chinook Hockey League
+178,WOAA,WOAA Senior AA Hockey League
+179,NCAA,NCAA Division I
+180,NCAA III,NCAA Division III
+181,NAIA,National Association of Intercollegiate Athletics
+182,ACHA,American Collegiate Hockey Association
+183,ACHA II,American Collegiate Hockey Association II
+184,ACHA III,American Collegiate Hockey Association III
+185,BCIHL,British Columbia Intercollegiate Hockey League
+186,USports,USports
+187,ACAC,Alberta Colleges Athletic Conference
+188,QCHL,QCHL
+189,FCHL,Fort Carlton Hockey League
+190,GLHL,Great Lakes Hockey League
+191,LHSAAAQ,Ligue de Hockey Sénior AAA du Québec
+192,LHSCE,Ligue de Hockey Senior Des Cantons Des L'Est
+193,NCHL,North Central Hockey League
+194,NLSHL,Central West Senior Hockey League
+195,QVHL,Qu'Appelle Valley Hockey League
+196,SEMHL,Southern Eastern Manitoba Hockey League
+197,SVHL,Sask Valley Hockey League
+198,SWHL,Sask West Hockey League
+199,MWHL,Mountain West Hockey League
+200,USHL,United States Hockey League
+201,NAHL,North American Hockey League
+202,NCDC,National Collegiate Development Conference
+203,EHL,Eastern Hockey League
+204,EHLP,EHLP
+205,NA3HL,North American 3 Hockey League
+206,USPHL Premier,United States Premier Hockey League - Premier
+207,USPHL Elite,United States Premier Hockey League - Elite
+208,WSHL,Western States Hockey League
+209,AYHL 18U,AYHL 18U
+210,AYHL 16U,AYHL 16U
+211,AYHL 15U,AYHL 15U
+212,CSDHL 18U,Central States Development Hockey League
+213,CSDHL 16U,Central States Development Hockey League
+214,CSDHL 15U,Central States Development Hockey League
+215,ECEL U18,ECEL U18
+216,ECEL U16,ECEL U16
+217,EJEPL U18,Eastern Junior Elite Prospects League
+218,EJEPL U16,Eastern Junior Elite Prospects League
+219,HPHL U18,HPHL Major Midget U18
+220,HPHL U16,HPHL Minor Midget U16
+221,HPHL U15,HPHL U15
+222,NAPHL 18U,North American Prospects Hockey League
+223,NAPHL 16U,NAPHL 16U
+224,NAPHL 15U,NAPHL 15U
+225,NJPHL U18,National Junior Prospects Hockey League
+226,NJPHL U16,National Junior Prospects Hockey League
+227,T1EHL U18,Tier 1 Elite Hockey League Major Midget
+228,T1EHL U16,Tier 1 Elite Hockey League Minor Midget
+229,T1EHL U15,T1EHL U15
+230,USPHL 18U,United States Premier Hockey League - 18U
+231,USPHL 16U,United States Premier Hockey League - 16U
+232,USPHL 15U,USPHL 15U
+233,HPBHL,High Performance Major Bantam
+234,HPBMHL,High Performance Minor Bantam
+235,T1EBHL,Tier 1 Elite Major Bantam
+236,T1EMBHL,Tier 1 Elite Minor Bantam
+237,USDP,US National Development Program
+238,USHS-Prep,"United States High School, Preparatory"
+239,USHS-MN,"United States High School, Minnesota"
+240,USHS-MI,"United States High School, Michigan"
+241,USHS-NY,"United States High School, New York State"
+242,USHS-MA,"United States High School, Massachusetts"
+243,MPHL,Midwest Prep Hockey League
+244,NSHL,Northern States Hockey League
+245,WHL,Western Hockey League
+246,AJHL,Alberta Junior Hockey League
+247,BCHL,British Columbia Hockey League
+248,MJHL,Manitoba Junior Hockey League
+249,SIJHL,Superior International Junior Hockey League
+250,SJHL,Saskatchewan Junior Hockey League
+251,CalJHL,Calgary Junior Hockey League
+252,CapJHL,Capital Junior Hockey League
+253,HJHL,Heritage Junior B Hockey League
+254,KJHL,Keystone Junior Hockey League
+255,KIJHL,Kootenay International Junior Hockey League
+256,NEAJBHL,North Eastern Alberta Junior B Hockey League
+257,NWJHL,North West Junior Hockey League
+258,PJHL,Prairie Junior Hockey League
+259,PIJHL,Pacific Junior Hockey League
+260,VIJHL,Vancouver Island Junior Hockey
+261,CalJCHL,Calgary Junior C Hockey League
+262,HTJHL,Hanover Tache Junior Hockey League
+263,NorJHL,Noralta Junior C Hockey League
+264,QVJHL,Qu'Appelle Valley Junior C Hockey League
+265,AMHL,Alberta Midget Hockey League
+266,AMMHL,Alberta Midget Minor
+267,BCMML,BC Hockey Major Midget League
+268,BCMIML,BC Minor Midget League
+269,CSSHL,CSSHL
+270,CSSHL E15,CSSHL E15
+271,CSSVHL,CSSVHL
+272,MMHL,Manitoba AAA Midget Hockey League
+273,NAMHL,Northern Alberta Midget AA Hockey League
+274,SMHL,Saskatchewan Midget AAA Hockey League
+275,WU17MP,Winnipeg AAA U17 Midget Prep
+276,AMBHL,Alberta Major Bantam
+277,CSSBHL,CSSBHL
+278,CSSBVHL,CSSBVHL
+279,PCBHL,Pacific Coast Bantam Hockey League
+280,SSMHL,S. Saskatoon Minor HL
+281,SBAAHL,SBAAHL
+282,WBAAA,Winnipeg Bantam AAA Div. 1
+283,WBAAA2,Winnipeg Bantam Div 2
+284,MMJHL,Manitoba Major Junior Hockey League
+285,OHL,Ontario Hockey League
+286,CCHL,Central Canada Hockey League
+287,NOJHL,Northern Ontario Junior Hockey
+288,OJHL,Ontario Junior Hockey League
+289,CCHL2,CCHL2
+290,GOJHL,Greater Ontario Junior Hockey League
+291,LJHL,LJHL
+292,NCJHL,National Capital Junior Hockey League
+293,PJCHL,Provincial Junior Hockey League
+294,AHMMPL,Alliance Hockey Minor Midget Pavilion League
+295,AHMPL,AHMPL
+296,ETAMMHL,Eastern Triple A Minor Midget Hockey League
+297,GNML,Great North Midget Hockey League
+298,GTHL,Greater Toronto Hockey League
+299,GTMMHL,Greater Toronto Minor Midget Hockey League
+300,HEOMAAA,HEOMAAA
+301,SCTAMM,South Central Triple A Minor Midget
+302,ETABHL,ETABHL
+303,GTBHL,Greater Toronto Bantam Hockey League
+304,NOBHL,Northern Ontario Bantam Hockey League
+305,NOMBHL,Northern Ontario Minor Bantam Hockey League
+306,OEBHL,OEBHL
+307,OEMBHL,OEMBHL
+308,CAHS,CAHS
+309,CISAA,CISAA
+310,CPJHL,Canadian Premier Jr Hockey League
+311,GMHL,Greater Metro Hockey League
+312,QMJHL,Québec Major Junior Hockey League
+313,MJAHL,Maritime Hockey League
+314,QJAAAHL,Ligue de Hockey Junior AAA du Québec
+315,CAJAAHL,Chaudiére-Appalaches Junior AA HL
+316,IsJHL,Island Junior Hockey League
+317,LHC,Ligue de Hockey de la Capitale
+318,LHJSLSJ,Ligue de Hockey Junior AA Saguenay-Lac-St-Jean
+319,LHMJAA,Metropolitaine Junior AA Hockey League
+320,NSJHL,Nova Scotia Junior Hockey League
+321,SJJHL,St. John's Junior Hockey League
+322,NBJHL,New Brunswick Junior Hockey League
+323,NSJCHL,Nova Scotia Junior C Hockey League
+324,PEIJCHL,Prince Edward Island Minor Junior Hockey League
+325,NBPEIMMHL,NB/PEI Major Midget Hockey League
+326,NLMMHL,Newfoundland & Labrador Major Midget Hockey League
+327,NSMMHL,Nova Scotia Major Midget Hockey League
+328,QMAAA,Ligue de hockey Midget AAA du Québec
+329,QMAA,QMAA
+330,QMEAA,QMEAA
+331,NBBAAAHL,New Brunswick Bantam AAA Hockey League
+332,NLBAAAHL,NLBAAAHL
+333,NSMBHL,Nova Scotia Major Bantam Hockey League
+334,PEIBAAA,PEI Bantam AAA League
+335,QBAAA,Quebec Bantam AAA Hockey League
+336,World Cup 2016,World Cup
+337,WC,World Championship
+338,WC D1A,World Championship Division I Group A
+339,WC D1B,World Championship Division I Group B
+340,WC D2A,WC D2A
+341,WC D2B,WC D2B
+342,WC D3,WC D3
+343,WC D3A,WC D3A
+344,WC D3B,WC D3B
+345,WC D3Q,World Championship Division III Qualification
+346,WC D4,WC D4
+347,Olympics,Olympic Games
+348,OGQ,Olympic Games Qualification
+349,U20 WJC,U20 World Junior Championship
+350,U20 WJC D1A,WJC-20 D1A
+351,U20 WJC D1B,WJC-20 D1B
+352,U20 WJC D2A,WJC-20 D2A
+353,U20 WJC D2B,WJC-20 D2B
+354,U20 WJC D3,WJC-20 D3
+355,U18 WJC,U18 World Championship
+356,U18 WJC D1A,WJC-18 D1A
+357,U18 WJC D1B,WJC-18 D1B
+358,U18 WJC D2A,WJC-18 D2A
+359,U18 WJC D2B,WJC-18 D2B
+360,U18 WJC D3A,WJC-18 D3A
+361,U18 WJC D3B,WJC-18 D3B
+362,Hlinka Gretzky Cup,Hlinka Gretzky Cup
+363,YOG,Youth Olympic Games
+364,U17 WHC,World Under-17 Hockey Challenge
+365,CCOA,Challenge Cup of Asia
+366,CCOA D1,Challenge Cup of Asia Division I
+367,CCOA U20,Challenge Cup of Asia U18
+368,CCOA U18,Challenge Cup of Asia U20
+369,Champions HL,Champions Hockey League
+370,Continental Cup,Continental Cup
+371,SDHL,Svenska damhockeyligan
+372,AllEttan,AllEttan (W)
+373,Division 1,Division 1 (W)
+374,Division 2,Division 2 (W)
+375,Stålbucklan,Stålbucklan (W)
+376,U18 Region,U18 Region (W)
+377,Liiga,Liiga (W)
+378,Mestis,Mestis (W)
+379,Suomi-sarja,Suomi-sarja (W)
+380,Denmark,Denmark (W)
+381,Norway,Kvinner Elite (W)
+382,Norway2,Norway2 (W)
+383,SWHL A,Swiss Women's League
+384,SWHL B,Swiss Women's Hockey League B
+385,Frauen-Bundesliga,Frauen-Bundesliga
+386,Germany2,Germany2 (W)
+387,Germany3,Germany3 (W)
+388,Germany4,Germany4 (W)
+389,EWHL,Elite Women's Hockey League
+390,DEBL,Dameneishockey Bundesliga
+391,DEBL2,Dameneishockey Bundesliga II
+392,France,France (W)
+393,WNIHL Elite,Women's National Ice Hockey League
+394,WNIHL Premier,Women's National Ice Hockey League
+395,WNIHL Division 1,Women's National Ice Hockey League
+396,WNIHL U16,Women's National Ice Hockey League U16
+397,Russia,Zhenskaya Hockey League
+398,Extraliga,Extraliga žen
+399,Extraliga,1. liga
+400,Latvia,Latvia (W)
+401,Poland,Polska Liga Hokeja Kobiet (PLHK)
+402,Bulgaria,Bulgaria (W)
+403,Italy,IHL Women
+404,Spain,Spain (W)
+405,Turkey,Turkey (W)
+406,AWIHL,Australian Women's Ice Hockey League
+407,NWHL,National Women's Hockey League
+408,CWHL,Canadian Women's Hockey League
+409,MAWHL,Mid-Atlantic Women's HL
+410,ACAC,Alberta Colleges Athletic Conference
+411,USports,USports
+412,NCAA,NCAA Division I
+413,NCAA III,NCAA Division III
+414,QCHL,QCHL (W)
+415,CAHS,CAHS (W)
+416,USHS,USHS (W)
+417,JWHL,Junior Women's Hockey League
+418,PWHL,Provincial Women's Hockey League
+419,WC,Women's World Championship
+420,WC D1A,WC D1A (W)
+421,WC D1B,WC D1B (W)
+422,WC D2A,WC D2A (W)
+423,WC D2B,WC D2B (W)
+424,WC D3,WC D3 (W)
+425,WCQ,WCQ (W)
+426,EC,European Women Championships
+427,Olympics,Olympic Games (Women)
+428,U18 WJC,U18 Women's World Championship
+429,U18 WJC D1A,WJC-18 D1A (W)
+430,U18 WJC D1B,WJC-18 D1B (W)
+431,U18 WJC D2A,WJC-18 D2A (W)
+432,U18 WJC D2B,WJC-18 D2B (W)
+433,YOG,Youth Olympic Games (Women)
+434,CCOA,Women's Challenge Cup of Asia
+435,CCOA D1,Women's Challenge Cup of Asia Division I
