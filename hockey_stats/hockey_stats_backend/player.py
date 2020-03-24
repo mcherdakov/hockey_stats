@@ -1,8 +1,8 @@
 from peewee import *
 from playhouse.shortcuts import model_to_dict
 
-db = PostgresqlDatabase('hockey', user='doadmin', password='rdxo4w05qb3vq10l',
-                        host='db-postgresql-fra1-36671-do-user-4768937-0.db.ondigitalocean.com', port=25060)
+db = PostgresqlDatabase('postgres', user='postgres', password='hockey',
+                        host='db', port=5432)
 
 
 class BaseModel(Model):
