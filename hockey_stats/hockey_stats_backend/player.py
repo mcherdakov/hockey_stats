@@ -12,6 +12,7 @@ class BaseModel(Model):
 
 class Player(BaseModel):
     name = CharField()
+    unicode_name = CharField()
     nationality = CharField()
     youth_team = CharField()
     position = CharField()
