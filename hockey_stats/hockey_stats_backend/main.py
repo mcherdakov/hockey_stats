@@ -18,3 +18,19 @@ def get_players(id: int = 0):
     if not player_by_id:
         raise HTTPException(status_code=400, detail="No player with such ID")
     return player_by_id.to_json()
+
+
+@app.get("/api/search/players")
+def get_players(s: str = None):
+    if s is None:
+        return []
+    s = s.lower()
+    s = s.split()
+    result_query = Player.unicode_name.contains(s[0])
+    for word in s:
+        result_query = result_query & Player.unicode_name.contains(word)
+    players = Player.select().where(result_query).limit(40)
+    if not players:
+        return []
+    players = [t.to_json() for t in players]
+    return players
