@@ -1,0 +1,1 @@
+docker run --rm -d -p 5000:80 --net postgres_backend backend

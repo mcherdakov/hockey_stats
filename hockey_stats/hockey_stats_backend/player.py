@@ -1,4 +1,6 @@
-from peewee import *
+from peewee import (
+    Model, PostgresqlDatabase, CharField, IntegerField
+)
 from playhouse.shortcuts import model_to_dict
 
 db = PostgresqlDatabase('postgres', user='postgres', password='hockey',
@@ -12,6 +14,7 @@ class BaseModel(Model):
 
 class Player(BaseModel):
     name = CharField()
+    unicode_name = CharField()
     nationality = CharField()
     youth_team = CharField()
     position = CharField()
