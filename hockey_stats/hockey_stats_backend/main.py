@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from playhouse.shortcuts import model_to_dict
 
-from player import Player
+from player import Player, Team
 
 app = FastAPI()
 
@@ -44,3 +44,34 @@ def get_players_by_querystring(s: str = None):
         return []
     players = [t.to_json() for t in players]
     return players
+
+
+@app.get("/api/teams")
+def get_teams(page: int = 0):
+    all_teams = Team.select(Team.id, Team.team_name).paginate(page, 100)
+    all_teams = [t.to_json() for t in all_teams]
+    return all_teams
+
+
+@app.get("/api/team")
+def get_teams(id: int = 0):
+    team_by_id = Team.get_or_none(Team.id == id)
+    if not team_by_id:
+        raise HTTPException(status_code=400, detail="No team with such ID")
+    return team_by_id.to_json()
+
+
+@app.get("/api/search/teams")
+def get_teams(s: str = None):
+    if s is None:
+        return []
+    s = s.lower()
+    s = s.split()
+    result_query = Team.unicode_name.contains(s[0])
+    for word in s:
+        result_query = result_query & Team.unicode_name.contains(word)
+    teams = Team.select().where(result_query).limit(40)
+    if not teams:
+        return []
+    teams = [t.to_json() for t in teams]
+    return teams
