@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from playhouse.shortcuts import model_to_dict
 
-from player import Player, Team
+from models import Player, Team
 
 app = FastAPI()
 
