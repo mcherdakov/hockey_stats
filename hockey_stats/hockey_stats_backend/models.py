@@ -28,3 +28,22 @@ class Player(BaseModel):
 
     class Meta:
         db_table = 'player'
+
+
+class Team(BaseModel):
+    league_name = CharField()
+    team_name = CharField()
+    full_name = CharField()
+    league_link = CharField()
+    youth_team = CharField()
+    position = CharField()
+    shoots = CharField()
+    year_founded = IntegerField()
+    weight = IntegerField()
+    age = IntegerField()
+
+    def to_json(self):
+        return model_to_dict(self)
+
+    class Meta:
+        db_table = 'team'
