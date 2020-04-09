@@ -1,0 +1,71 @@
+def av_games_in_last_3(df):
+    return av_feature_in_last_3(df, 'av_games_in_last_3', "games")
+
+def av_goals_in_last_3(df):
+    return av_feature_in_last_3(df, 'av_goals_in_last_3', "goals")
+
+def av_assists_in_last_3(df):
+    return av_feature_in_last_3(df, 'av_assists_in_last_3', "assists")
+
+def av_penalty_in_last_3(df):
+    return av_feature_in_last_3(df, 'av_penalty_in_last_3', "penalty")
+
+def av_p_m_in_last_3(df):
+    return av_feature_in_last_3(df, 'av_p_m_in_last_3', "p_m")
+
+def av_p_in_last_3(df):
+    return av_feature_in_last_3(df, 'av_+_in_last_3', "+")
+
+def av_p_in_last_3(df):
+    return av_feature_in_last_3(df, 'av_-_in_last_3', "-")
+
+def av_esg_in_last_3(df):
+    return av_feature_in_last_3(df, 'av_esg_in_last_3', "esg")
+
+def av_ppg_in_last_3(df):
+    return av_feature_in_last_3(df, 'av_ppg_in_last_3', "ppg")
+
+def av_shg_in_last_3(df):
+    return av_feature_in_last_3(df, 'av_shg_in_last_3', "shg")
+
+def av_otg_in_last_3(df):
+    return av_feature_in_last_3(df, 'av_otg_in_last_3', "otg")
+
+def av_gwg_in_last_3(df):
+    return av_feature_in_last_3(df, 'av_gwg_in_last_3', "gwg")
+
+def av_sds_in_last_3(df):
+    return av_feature_in_last_3(df, 'av_sds_in_last_3', "sds")
+
+def av_sog_in_last_3(df):
+    return av_feature_in_last_3(df, 'av_sog_in_last_3', "sog")
+
+def av__SOG_in_last_3(df):
+    return av_feature_in_last_3(df, 'av_%SOG_in_last_3', "%SOG")
+
+def av_S_G_in_last_3(df):
+    return av_feature_in_last_3(df, 'av_S/G_in_last_3', "S/G")
+
+def av_fo_in_last_3(df):
+    return av_feature_in_last_3(df, 'av_fo_in_last_3', "fo")
+
+def av_fow_in_last_3(df):
+    return av_feature_in_last_3(df, 'av_fow_in_last_3', "fow")
+
+def av__FO_in_last_3(df):
+    return av_feature_in_last_3(df, 'av_%FO_in_last_3', "%FO")
+
+def av_TOI_G_in_last_3(df):
+    return av_feature_in_last_3(df, 'av_TOI/G_in_last_3', "TOI/G")
+
+def av_SFT_G_in_last_3(df):
+    return av_feature_in_last_3(df, 'av_SFT/G_in_last_3', "SFT/G")
+
+def av_hits_in_last_3(df):
+    return av_feature_in_last_3(df, 'av_hits_in_last_3', "hits")
+
+def av_bls_in_last_3(df):
+    return av_feature_in_last_3(df, 'av_bls_in_last_3', "bls")
+
+def av_foa_in_last_3(df):
+    return av_feature_in_last_3(df, 'av_foa_in_last_3', "foa")
