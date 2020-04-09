@@ -3,7 +3,7 @@ docker rm -f db
 docker run -d --name db \
   -e POSTGRES_PASSWORD=hockey \
   -p 5432:5432 \
-  -v ~/hockey_stats/hockey_stats/:/home/ \
+  -v /Users/gvyarduhin/WebstormProjects/hockey_stats/hockey_stats/:/home/ \
   --net postgres_backend \
   postgres
 
