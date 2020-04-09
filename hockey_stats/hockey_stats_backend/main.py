@@ -67,9 +67,9 @@ def get_teams(s: str = None):
         return []
     s = s.lower()
     s = s.split()
-    result_query = Team.unicode_name.contains(s[0])
+    result_query = Team.team_name.contains(s[0])
     for word in s:
-        result_query = result_query & Team.unicode_name.contains(word)
+        result_query = result_query & Team.team_name.contains(word)
     teams = Team.select().where(result_query).limit(40)
     if not teams:
         return []
