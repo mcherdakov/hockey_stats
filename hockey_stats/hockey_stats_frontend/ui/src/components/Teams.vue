@@ -1,57 +1,59 @@
 <template>
   <div>
-    Players:
-    <multiselect v-model="selectedPlayer" placeholder="Start typing..."
-        :options="players" :searchable="true" label="name"
-        track-by="name" :loading="isLoading" :internal-search="false"
-        @search-change="asyncFind">
+    Teams:
+    <multiselect v-model="selectedTeam" placeholder="Start typing..."
+                 :options="teams" :searchable="true" label="name"
+                 track-by="name" :loading="isLoading" :internal-search="false"
+                 @search-change="asyncFind">
       <template slot="singleLabel" slot-scope="{ option }">
         {{ option.name }}
       </template>
     </multiselect>
-    <div v-if="selectedPlayer !== null">
+    <div v-if="selectedTeam !== null">
       <br>
-      <PlayersTable :info="selectedPlayer" />
+      <TeamsTable :info="selectedTeam" />
     </div>
   </div>
 </template>
 
 <script>
+
+
 import { mapActions, mapGetters } from 'vuex';
-import PlayersTable from '@/components/PlayersTable.vue';
+import TeamsTable from '@/components/TeamsTable.vue';
 import Multiselect from 'vue-multiselect';
 
 export default {
   components: {
-    PlayersTable,
+    TeamsTable,
     Multiselect,
   },
   data() {
     return {
-      selectedPlayer: null,
+      selectedTeam: null,
       isLoading: false,
-      players: [],
+      teams: [],
     };
   },
   computed: {
     ...mapGetters({
-      storedPlayers: 'getPlayers',
-      info: 'getInfo',
+      storedTeams: 'getTeams',
+      info: 'getTeamInfo',
     }),
   },
   methods: {
     ...mapActions([
-      'fetchPlayers',
-      'fetchInfo',
+      'fetchTeams',
+      'fetchTeamInfo',
     ]),
     asyncFind(query) {
       if (query === '') {
         return;
       }
       this.isLoading = true;
-      this.fetchPlayers(query).then(() => {
+      this.fetchTeamInfo(query).then(() => {
         this.isLoading = false;
-        this.players = this.storedPlayers;
+        this.teams = this.storedTeams;
       });
     },
   },
@@ -61,8 +63,8 @@ export default {
 <style src="vue-multiselect/dist/vue-multiselect.min.css"></style>
 
 <style scoped>
-.multiselect {
-  width: 400px;
-  margin: auto;
-}
+  .multiselect {
+    width: 400px;
+    margin: auto;
+  }
 </style>
