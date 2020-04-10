@@ -9,7 +9,7 @@
         {{ option.name }}
       </template>
     </multiselect>
-    <div v-if="selectedPlayer !== null">
+    <div v-if="selectedPlayer !== null" >
       <br>
       <PlayersTable :info="selectedPlayer" />
     </div>
@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import { mapActions, mapGetters } from 'vuex';
+import { mapActions, mapGetters, mapMutations } from 'vuex';
 import PlayersTable from '@/components/PlayersTable.vue';
 import Multiselect from 'vue-multiselect';
 
@@ -39,10 +39,18 @@ export default {
       info: 'getInfo',
     }),
   },
+  watch: {
+    selectedPlayer(newPlayer) {
+      this.setPlayerId(newPlayer.id);
+    },
+  },
   methods: {
     ...mapActions([
       'fetchPlayers',
       'fetchInfo',
+    ]),
+    ...mapMutations([
+      'setPlayerId',
     ]),
     asyncFind(query) {
       if (query === '') {

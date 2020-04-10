@@ -6,10 +6,14 @@ export default {
   state: {
     players: [],
     info: '',
+    playerId: '',
   },
   mutations: {
     setPlayers(state, data) {
       state.players = data;
+    },
+    setPlayerId(state, data) {
+      state.playerId = data;
     },
     setInfo(state, data) {
       state.info = data;
@@ -32,6 +36,9 @@ export default {
   getters: {
     getPlayers(state) {
       return state.players;
+    },
+    getPlayerId(state) {
+      return state.playerId;
     },
     getInfo(state) {
       return state.info;

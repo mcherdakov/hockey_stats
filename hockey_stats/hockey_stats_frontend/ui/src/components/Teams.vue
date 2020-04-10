@@ -19,7 +19,7 @@
 <script>
 
 
-import { mapActions, mapGetters } from 'vuex';
+import { mapActions, mapGetters, mapMutations } from 'vuex';
 import TeamsTable from '@/components/TeamsTable.vue';
 import Multiselect from 'vue-multiselect';
 
@@ -41,10 +41,18 @@ export default {
       info: 'getTeamInfo',
     }),
   },
+  watch: {
+    selectedTeam(newTeam) {
+      this.setTeamId(newTeam.id);
+    },
+  },
   methods: {
     ...mapActions([
       'fetchTeams',
       'fetchTeamInfo',
+    ]),
+    ...mapMutations([
+      'setTeamId',
     ]),
     asyncFind(query) {
       if (query === '') {
