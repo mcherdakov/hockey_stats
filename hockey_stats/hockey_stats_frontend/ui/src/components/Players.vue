@@ -9,8 +9,7 @@
         {{ option.name }}
       </template>
     </multiselect>
-    <div v-if="selectedPlayer !== null">
-      {{storePlayerId()}}
+    <div v-if="selectedPlayer !== null" >
       <br>
       <PlayersTable :info="selectedPlayer" />
     </div>
@@ -32,15 +31,18 @@ export default {
       selectedPlayer: null,
       isLoading: false,
       players: [],
-      temp: null,
     };
   },
   computed: {
     ...mapGetters({
       storedPlayers: 'getPlayers',
       info: 'getInfo',
-      temp: 'getPlayerId',
     }),
+  },
+  watch: {
+    selectedPlayer(newPlayer) {
+      this.setPlayerId(newPlayer.id);
+    },
   },
   methods: {
     ...mapActions([
@@ -50,12 +52,6 @@ export default {
     ...mapMutations([
       'setPlayerId',
     ]),
-    storePlayerId() {
-      console.log(99);
-      console.log(this.selectedPlayer.id);
-      this.setPlayerId(this.selectedPlayer.id);
-      console.log(this.temp);
-    },
     asyncFind(query) {
       if (query === '') {
         return;

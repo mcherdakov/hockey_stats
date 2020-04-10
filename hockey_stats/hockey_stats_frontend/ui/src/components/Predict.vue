@@ -8,28 +8,32 @@
 
 <script>
 
-import { mapGetters } from 'vuex';
+import { mapActions, mapGetters } from 'vuex';
 
 export default {
   data() {
     return {
       predictInfo: '',
-      player_id: null,
     };
   },
   computed: {
     ...mapGetters({
       player_id: 'getPlayerId',
+      team_id: 'getTeamId',
+      pred: 'getPredict',
     }),
   },
   methods: {
+    ...mapActions([
+      'fetchPredict',
+    ]),
     predict() {
-      console.log(5);
-      console.log(this.player_id);
-      if (this.player_id === null || this.player_id === '') {
+      if (this.player_id === '' || this.team_id === '') {
         this.predictInfo = 'Select player and team for predict';
       } else {
-        this.predictInfo = this.player_id;
+        this.fetchPredict(this.player_id, this.team_id).then(() => {
+          this.predictInfo = this.pred;
+        });
       }
     },
   },
