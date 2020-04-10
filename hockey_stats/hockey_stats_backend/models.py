@@ -35,12 +35,7 @@ class Team(BaseModel):
     team_name = CharField()
     full_name = CharField()
     league_link = CharField()
-    youth_team = CharField()
-    position = CharField()
-    shoots = CharField()
     year_founded = IntegerField()
-    weight = IntegerField()
-    age = IntegerField()
 
     def to_json(self):
         return model_to_dict(self)
