@@ -20,13 +20,13 @@ export default {
     },
   },
   actions: {
-    fetchTeams(ctx, query) {
+    fetchTeamInfo(ctx, query) {
       axios.get(`${baseUrl}/search/teams/?s=${query}`)
         .then((resp) => {
           ctx.commit('setTeams', resp.data);
         });
     },
-    fetchTeamInfo(ctx, id) {
+    fetchTeams(ctx, id) {
       axios.get(`${baseUrl}/team?id=${id}`)
         .then((resp) => {
           ctx.commit('setTeamInfo', resp.data);

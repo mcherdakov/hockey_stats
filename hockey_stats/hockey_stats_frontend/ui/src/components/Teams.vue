@@ -2,11 +2,11 @@
   <div>
     Teams:
     <multiselect v-model="selectedTeam" placeholder="Start typing..."
-                 :options="teams" :searchable="true" label="name"
-                 track-by="name" :loading="isLoading" :internal-search="false"
+                 :options="teams" :searchable="true" label="team_name"
+                 track-by="team_name" :loading="isLoading" :internal-search="false"
                  @search-change="asyncFind">
       <template slot="singleLabel" slot-scope="{ option }">
-        {{ option.name }}
+        {{ option.team_name }}
       </template>
     </multiselect>
     <div v-if="selectedTeam !== null">
