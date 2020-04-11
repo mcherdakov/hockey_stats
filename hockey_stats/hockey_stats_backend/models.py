@@ -8,6 +8,9 @@ db = PostgresqlDatabase('postgres', user='postgres', password='hockey',
 
 
 class BaseModel(Model):
+    def to_json(self):
+        return model_to_dict(self)
+
     class Meta:
         database = db
 
@@ -23,9 +26,6 @@ class Player(BaseModel):
     weight = IntegerField()
     age = IntegerField()
 
-    def to_json(self):
-        return model_to_dict(self)
-
     class Meta:
         db_table = 'player'
 
@@ -37,8 +37,16 @@ class Team(BaseModel):
     league_link = CharField()
     year_founded = IntegerField()
 
-    def to_json(self):
-        return model_to_dict(self)
-
     class Meta:
         db_table = 'team'
+
+
+class Prediction(BaseModel):
+    player_id = IntegerField()
+    team_id = IntegerField()
+    goals = IntegerField()
+    assists = IntegerField()
+    p_m = IntegerField()
+
+    class Meta:
+        db_table = 'prediction'
