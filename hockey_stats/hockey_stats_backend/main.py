@@ -83,5 +83,5 @@ def get_predict(player_id: int = None, team_id: int = None):
         raise HTTPException(status_code=400, detail="No team_id field")
     prediction = Prediction.get_or_none((Prediction.player_id == player_id) & (Prediction.team_id == team_id))
     if not prediction:
-        raise HTTPException(status_code=400, detail="No prediction for such player_id and team_id")
+        raise HTTPException(status_code=404, detail="No prediction for such player_id and team_id")
     return prediction.to_json()
