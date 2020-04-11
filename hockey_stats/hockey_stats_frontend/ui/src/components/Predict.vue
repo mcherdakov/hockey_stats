@@ -2,18 +2,28 @@
   <div>
     <button v-on:click="predict">Predict</button>
     <br>
-    {{ predictInfo }}
+    <br>
+    <div v-if="predictInfo !== null &  typeof (predictInfo) === 'object'" >
+      <PredictTable :info="predictInfo" />
+    </div>
+    <div v-if="predictInfo !== null & typeof (predictInfo) === 'string'">
+      {{predictInfo}}
+    </div>
   </div>
 </template>
 
 <script>
 
 import { mapActions, mapGetters } from 'vuex';
+import PredictTable from '@/components/PredictTable.vue';
 
 export default {
+  components: {
+    PredictTable,
+  },
   data() {
     return {
-      predictInfo: '',
+      predictInfo: null,
     };
   },
   computed: {
@@ -31,7 +41,7 @@ export default {
       if (this.player_id === '' || this.team_id === '') {
         this.predictInfo = 'Select player and team for predict';
       } else {
-        this.fetchPredict(this.player_id, this.team_id).then(() => {
+        this.fetchPredict({ teamId: this.team_id, playerId: this.player_id }).then(() => {
           this.predictInfo = this.pred;
         });
       }

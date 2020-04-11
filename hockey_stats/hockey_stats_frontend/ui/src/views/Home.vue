@@ -1,7 +1,9 @@
 <template>
   <div>
     <Players />
+    <br>
     <Teams />
+    <br>
     <Predict />
   </div>
 </template>

@@ -12,8 +12,8 @@ export default {
     },
   },
   actions: {
-    fetchPredict(ctx, playerId, teamId) {
-      axios.get(`${baseUrl}/predict?playerId=${playerId}&teamId=${teamId}`)
+    fetchPredict(ctx, payload) {
+      axios.get(`${baseUrl}/predict?player_id=${payload.playerId}&team_id=${payload.teamId}`)
         .then((resp) => {
           ctx.commit('setPredict', resp.data);
         });
