@@ -1,9 +1,7 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 
-from playhouse.shortcuts import model_to_dict
-
-from models import Player, Team
+from models import Player, Team, Prediction
 
 app = FastAPI()
 
@@ -76,3 +74,14 @@ def get_teams(s: str = None):
     teams = [t.to_json() for t in teams]
     return teams
 
+
+@app.get("/api/predict")
+def get_predict(player_id: int = None, team_id: int = None):
+    if player_id is None:
+        raise HTTPException(status_code=400, detail="No player_id field")
+    if team_id is None:
+        raise HTTPException(status_code=400, detail="No team_id field")
+    prediction = Prediction.get_or_none((Prediction.player_id == player_id) & (Prediction.team_id == team_id))
+    if not prediction:
+        raise HTTPException(status_code=400, detail="No prediction for such player_id and team_id")
+    return prediction.to_json()
