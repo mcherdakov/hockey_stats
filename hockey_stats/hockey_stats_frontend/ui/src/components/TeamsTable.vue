@@ -12,9 +12,6 @@
           <td>team_name</td><td> {{ info.team_name }} </td>
         </tr>
         <tr>
-          <td>full_name</td><td> {{ info.full_name }} </td>
-        </tr>
-        <tr>
           <td>year_founded</td><td> {{ info.year_founded }} </td>
         </tr>
       </table>
