@@ -12,24 +12,28 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
 @app.get("/api/players")
-def get_all_players(page: int = 0):
+def get_players(page: int = 0):
     all_players = Player.select(Player.id, Player.name).paginate(page, 100)
     all_players = [t.to_json() for t in all_players]
     return all_players
 
 
 @app.get("/api/player")
-def get_player(id: int = 0):
+def get_players(id: int = 0):
     player_by_id = Player.get_or_none(Player.id == id)
     if not player_by_id:
         raise HTTPException(status_code=400, detail="No player with such ID")
-    return player_by_id.to_json()
+    player_by_id = player_by_id.to_json()
+    if not Prediction.get_or_none((Prediction.player_id == id)):
+        player_by_id["has_prediction"] = False
+    else:
+        player_by_id["has_prediction"] = True
+    return player_by_id
 
 
 @app.get("/api/search/players")
-def get_players_by_querystring(s: str = None):
+def get_players(s: str = None):
     if s is None:
         return []
     s = s.lower()
@@ -37,11 +41,18 @@ def get_players_by_querystring(s: str = None):
     result_query = Player.unicode_name.contains(s[0])
     for word in s:
         result_query = result_query & Player.unicode_name.contains(word)
-    players = Player.select().where(result_query).limit(40)
+    players = Player.select().where(result_query).limit(50)
     if not players:
         return []
-    players = [t.to_json() for t in players]
-    return players
+    json_players = []
+    for t in players:
+        player = t.to_json()
+        if not Prediction.get_or_none((Prediction.player_id == t.id)):
+            player["has_prediction"] = False
+        else:
+            player["has_prediction"] = True
+        json_players.append(player)
+    return json_players
 
 
 @app.get("/api/teams")
@@ -65,9 +76,9 @@ def get_teams(s: str = None):
         return []
     s = s.lower()
     s = s.split()
-    result_query = Team.team_name.contains(s[0])
+    result_query = Team.full_name.contains(s[0])
     for word in s:
-        result_query = result_query & Team.team_name.contains(word)
+        result_query = result_query & Team.full_name.contains(word)
     teams = Team.select().where(result_query).limit(40)
     if not teams:
         return []
