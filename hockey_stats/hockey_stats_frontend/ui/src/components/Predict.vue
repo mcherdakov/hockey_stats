@@ -38,11 +38,14 @@ export default {
       'fetchPredict',
     ]),
     predict() {
+      this.predictInfo = "Can't calculate predict for this player!";
       if (this.player_id === '' || this.team_id === '') {
         this.predictInfo = 'Select player and team for predict';
       } else {
         this.fetchPredict({ teamId: this.team_id, playerId: this.player_id }).then(() => {
-          this.predictInfo = this.pred;
+          if (this.pred !== '') {
+            this.predictInfo = this.pred;
+          }
         });
       }
     },

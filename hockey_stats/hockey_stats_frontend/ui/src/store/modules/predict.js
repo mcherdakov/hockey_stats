@@ -13,10 +13,13 @@ export default {
   },
   actions: {
     fetchPredict(ctx, payload) {
-      axios.get(`${baseUrl}/predict?player_id=${payload.playerId}&team_id=${payload.teamId}`)
-        .then((resp) => {
-          ctx.commit('setPredict', resp.data);
-        });
+      return new Promise((resolve) => {
+        axios.get(`${baseUrl}/predict?player_id=${payload.playerId}&team_id=${payload.teamId}`)
+          .then((resp) => {
+            ctx.commit('setPredict', resp.data);
+            resolve();
+          });
+      });
     },
   },
   getters: {
